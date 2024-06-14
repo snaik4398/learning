@@ -228,7 +228,83 @@ log : have all the logs
 =============================================================
 =============================================================
 
+GIT BRANCHES ::
+
+
+
+git branch : it will show the list of branches and  which branch you are in 
+
+git branch dev : create the new branch as dev 
+
+ git checkout dev : switch to a the branch 
+ 
+ if want to check then type git branches
+ 
+ 
+ in the dev brnaches also it is the copy of master branch 
+ andhere we can change our code 
+
+then need to merge those two branches 
 
  
+  
+ ---------------------------
+ PS C:\Users\Admin\Downloads\company Details\learing> git branch
+* master
+PS C:\Users\Admin\Downloads\company Details\learing> git branch sanjay
+PS C:\Users\Admin\Downloads\company Details\learing> git branch\
+git: 'branch\' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+PS C:\Users\Admin\Downloads\company Details\learing> git branch
+* master
+  sanjay
+PS C:\Users\Admin\Downloads\company Details\learing>  git checkout sanjay
+Switched to branch 'sanjay'
+M       git.txt
+PS C:\Users\Admin\Downloads\company Details\learing> git branch
+  master
+* sanjay
+-------------------------------------------
+MERGING OF BRANCHES  
+
+
+before mergeing we need to go to the master branch then  from their we need to type the
+git merge dev 
+
+git merge <sub brnaches that>
+
+
+
+======================
+create the branch and check it out 
+
+git branch newbranch 
+git checkout newbranch
+
+in one line 
+
+git branch -b newbranch 
+
+resolving the merge conflict :
+
+when it appears remove  the un wanted code and then merge the branches 
+then do a stage bye git add 
+then commit again
+
+==============================
+
+Delete a branch 
+
+:: git branch -d bugfix
+----------------------------
+
+
+ 
+
+
+ 
+
 
 
