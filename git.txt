@@ -300,11 +300,36 @@ Delete a branch
 :: git branch -d bugfix
 ----------------------------
 
+create remote repo 
+https://medium.com/@brianmutinda49/at-last-the-simple-secret-to-changing-your-git-repository-url-is-revealed-daadb0155186
+git remote -v
+
+
+git remote add origin https://github.com/snaik4398/learning.git
+git branch -M main
+git push -u origin main
+
+
+
+You can remove the origin URL by using this command:
+git remote remove origin
+
+Afterwards you can use the command below to add your new URL.
+git remote add origin <yourNewUrl http url>
+
+==========
+
+
 
  
 
 
  
+
+
+
+
+
 
 
 
