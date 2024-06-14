@@ -1,0 +1,244 @@
+Linux distrbution :
+1.
+ls /
+to show the top level directory 
+it is the root directory
+
+
+
+ls /bin 
+
+all the command line uitlity are stored 
+
+
+/boot
+all the linux startup files including kernel files 
+
+
+/etc 
+
+will have all the ocnfiguration files for sytem to run 
+
+
+/dev 
+alll the hardware and sofware devices 
+form trminal to cd drive are stored in it 
+
+/home 
+this is home directory for every user 
+
+/lib 
+libraries for the kernel and various program are stored ehere 
+
+/mnt 
+mountin storage for external drive or external server folder 
+removevable drive 
+
+
+/opt 
+all the application binary are stored when install all the software 
+
+/proc 
+all the currently running kernel releted process 
+
+/root 
+home directory of root user  
+
+ls /sbin 
+all the admin command are stored here 
+
+/tmp 
+all the temporary files storedhere 
+
+
+/user 
+all the small progam or command line utlities are stored her ehere
+
+/var
+all the log files and progrma varibale are stored here 
+
+
+===============================================
+
+
+pwd 
+which directory you are in 
+
+ls 
+list directory 
+
+
+mkdir : create directory 
+
+create the file 
+cat> myfile.txt
+
+ctrl + c : exit 
+
+
+
+==============
+
+ls -l : display the permisioon of the file and when modified etc
+ls -a  : display the all the hidden files in that current directory 
+
+ls -r : will include all the data of sub directory
+
+cd .. :back directory 
+
+
+copy
+cp myfile.txt newfile.txt
+
+
+to show the file 
+:cat newfile.txtsu
+
+move file :
+mv file1.txt mytxt.txt 
+
+mv file1.txt subdir 
+
+=======================
+
+
+remove a file :
+rm file1.txt
+
+
+remove a directory : remove the directory and its subdirectory 
+rm -r <dirname>
+
+===========================
+
+
+VI editior 
+==============================
+==============================
+ vi file1.txt
+ 
+ =============
+ 
+ it will bein command mode initially 
+ 
+ press i  : to insert 
+ 
+ press esc to main menu 
+ 
+ press I : to insert in the start of line 
+ 
+ press a : to add data at thecursur point 
+ 
+ press A : add data at the end of the current line 
+ 
+ press  o:new line after hte current line 
+
+ 
+ press O : insert a new line before theline 
+ 
+ press s  remove that current data and insert data 
+ 
+ dd : delete a line 
+ 
+ esc  <number of line > dd : to delete the number of lines 
+ 
+ 
+ esc to command 
+ yy to copy the line 
+ 
+ p for paste 
+ 
+ 
+ esc + shift : 
+ :wq  :: write and quit 
+ 
+ : q :: quit 
+ 
+ :q! :: forcefully quit 
+ 
+ 
+ 
+ search for the data 
+ 
+ :/<string want to search>
+
+
+ ======================================================================
+ 
+ yum command to install the software 
+ -------------------------------------
+ yum repolist :: list out the packages which are avialable to install 
+ 
+ yum list installed :: softwares that are installed in the computer 
+ 
+ 
+ yum grouop list :  list out the group of files tht we want to install ex : aws tools 
+ 
+ 
+ =======================
+ 
+ yum install <pkg name>
+
+yum remove <pkg name>
+
+
+
+httpd : web sever 
+1.yum install httpd 
+
+launch the webserver :
+
+service httpd start 
+
+ --------------------------------------
+ this http server will be host the index.html file 
+which is present in the
+ 
+var/www/html/index.html 
+
+
+=============
+
+yum install curl 
+
+curl is command use to hit the serve in a particular server 
+-------------------------------------
+command :
+curl localhost 80 
+
+
+
+
+
+ 
+=================
+
+see the last 5 line of log file 
+
+tail -5 /var/log/yum.log
+
+
+history for that releted command 
+
+yum history 
+
+
+
+--------
+search for a particualr package 
+
+yum search java 
+
+yum search httpd 
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+ 

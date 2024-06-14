@@ -1,0 +1,44 @@
+
+refere git doucmentation
+git config 
+
+git config --local 
+			-- global 
+			-- system 
+
+
+
+setting the user name 
+
+git config --global user.name "sanjay" 
+
+
+check the user name 
+ git config user.name 
+ 
+ 
+
+git config --global user.email "snaik.4398@gmail.com" 
+
+cehck all the confgiuration 
+
+git config --list
+
+
+==============================
+
+git in action 
+
+create a directoy 
+ 
+ got to cmd 
+ 
+ type::
+ git init : to initialize the repository 
+ 
+ create a file  
+	
+ 
+ 
+
+
