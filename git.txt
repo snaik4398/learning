@@ -98,10 +98,137 @@ d-----        14-06-2024     13:02                refs
 
 
 
+=============================================================
+=============================================================
+=============================================================
+GIT LOG 
+: it will show the all the commits that we made 
+always the latet commitcome on top 
 
 
+git log : show all the logs 
+-------------------------------------------
+PS C:\Users\Admin\Downloads\company Details\learing> git log
+commit b9a6b31101a64bdae86f325b29925093b00bae7a (HEAD -> master)
+Author: snaik4398 <snaik4398@gmail.com>
+Date:   Fri Jun 14 13:23:07 2024 +0530
+
+    changing git files 3rd times
+
+commit a0c199df382918bcad29cf698155a5e2012c5840
+Author: snaik4398 <snaik4398@gmail.com>
+Date:   Fri Jun 14 13:13:59 2024 +0530
+
+    changing git files 2nd times
+
+commit 6a16c006bcdda10bd82d1d10fffb7ef0a2d60f41
+Author: snaik4398 <snaik4398@gmail.com>
+Date:   Fri Jun 14 13:13:38 2024 +0530
+
+    changing git files
+
+commit e9fa2e8a07fdcccce8d949a615fe0b8a69f4bb9c
+Author: snaik4398 <snaik4398@gmail.com>
+Date:   Fri Jun 14 13:12:16 2024 +0530
+
+    learing data
+==================================
+git log --oneline : show only the one linemsg 
+---------------------------------------------------------
+PS C:\Users\Admin\Downloads\company Details\learing> git log --oneline
+b9a6b31 (HEAD -> master) changing git files 3rd times
+a0c199d changing git files 2nd times
+6a16c00 changing git files
+e9fa2e8 learing data
+---------------------------------------------------------
+
+GIT DIFF 
+
+
+compare the commit 
+accordinf to the commit order it will show the green and red lines which are added and delted 
+----------------------------------------------
+git diff <old commit id> <new commit id>
+
+
+IMP : press q to quit 
+
+=============================================================
+=============================================================
+=============================================================
+
+HOW TO REMOVE YOU CHANGES 
+
+UNDO CHNAGES 
+-> Before staging (means before  runing the git ad command) 
+	git checkout index.html 
+
+-> After staging (after running git add command )
+	git reset HEAD index.html 
+	git checkout index.html 
+
+
+-> After commit 
+		need to do 
+	git reset 
+	then 
+	git reset HEAD index.html 
+	git checkout index.html 
 	
+=============================================================
+=============================================================
+=============================================================
  
+git secret folder 
+list the files 
+ls .git
+PS C:\Users\Admin\Downloads\company Details\learing> ls .git
+
+
+    Directory: C:\Users\Admin\Downloads\company Details\learing\.git
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        14-06-2024     13:02                hooks
+d-----        14-06-2024     13:02                info
+d-----        14-06-2024     13:12                logs
+d-----        14-06-2024     13:23                objects
+d-----        14-06-2024     13:02                refs
+-a----        14-06-2024     13:23             29 COMMIT_EDITMSG
+-a----        14-06-2024     13:02            130 config
+-a----        14-06-2024     13:02             73 description
+-a----        14-06-2024     13:02             23 HEAD
+-a----        14-06-2024     13:23            217 index
+
+entering in to directoy
+cd .git 
+
+
+cat COMMIT_EDITMSG : this has the last commit details 
+
+cat HEAD : head points to the latest commit 
+cat config : all the config releted file 
+
+cat hooks : files that will be executed when certain things happen 
+when  a commit happens  if you want to do some certain jobs the here we canwrite thescript for it
+info : all the info for repo 
+objects: git store all the works as object 
+
+
+index: store all the hashed value for stagging 
+
+log : have all the logs
+
+
+ ref : remote repository reference for internal use 
+ 
+ 
+ =============================================================
+=============================================================
+=============================================================
+
+
  
 
 
