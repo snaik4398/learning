@@ -60,6 +60,19 @@ git add .
 
 -------------------------
 
+PS C:\Users\Admin\Downloads\company Details\learing> git add .
+PS C:\Users\Admin\Downloads\company Details\learing> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   git.txt
+        new file:   linux releted.txt
+
+
+
 	
  
  
